@@ -1,0 +1,62 @@
+#demo {
+	padding: 50px 135px;
+}
+#encrypting, #decrypting {
+	display: inline-block;
+	width: 303px;
+	padding: 50px 100px 30px 100px;
+	border: 2px solid black;
+	border-radius: 35px;
+	background-color: #cccccc;
+}
+#encrypting {
+	float: left;
+}
+#decrypting {
+	height: 504px;
+	float: right;
+}
+textarea#textual-input {
+	width: 297px;
+	max-height: 200px;
+	margin-bottom: 40px;
+	resize: none;
+}
+input#upload {
+	display: inline-block;
+	width: 280px;
+	margin: 50px auto;
+}
+div#load-toggle {
+	display: none;
+}
+a#dload {
+	display: block;
+	margin: 30px auto 0px auto;
+	font-size: 40pt;
+	text-decoration: none;
+	color: #0000FF;
+	text-align: center;
+}
+a#dload p {
+	display: block;
+	margin: 0px;
+	font-family: sans-serif;
+	font-size: 20pt;
+}
+canvas#textual-id {
+	display: none;
+}
+img#textual-id {
+	border: 2px solid black;
+}
+textarea#textual-base {
+	display: none;
+}
+textarea#textual-id {
+	height: 300px;
+	width: 300px;
+	resize: none;
+}
+@media only screen and (max-device-width: 480px) {
+}
