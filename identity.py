@@ -52,5 +52,5 @@ def cells(string):
             co.append('CCCCCC')
     return list(chunks(co, ps))
 
-x = cells('Zach Gates')
+x = cells('')
 print(x)
