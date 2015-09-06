@@ -57,10 +57,10 @@ function chunks (l, n) {
 }
 
 function bincolor (n) {
-	clrs = {"0": "C45656", "1": "C49756", "2": "B0C456",
-            "3": "6EC456", "4": "56C481", "5": "56C4C3",
-            "6": "5684C4", "7": "6B56C4", "8": "AD56C4",
-            "9": "C4569A", "+": "CCCCCC"};
+	clrs = {"0": [196, 86, 86, 255], "1": [196, 151, 86, 255], "2": [176, 196, 86, 255],
+            "3": [110, 196, 86, 255], "4": [86, 196, 129, 255], "5": [86, 196, 195, 255],
+            "6": [86, 132, 196, 255], "7": [107, 86, 196, 255], "8": [173, 86, 196, 255],
+            "9": [196, 86, 154, 255], "+": [0, 0, 0, 0]};
 	return clrs[n];
 }
 
@@ -142,41 +142,44 @@ function cells (string) {
 			co.push(color);
 		}
 		else {
-			co.push("000000");
+			co.push([0, 0, 0, 255]);
 		}
 	}
 	if (co.length > Math.pow(ps, 2)) {
 		error = co.splice(Math.pow(ps, 2));
 		for (var i = 0; i < error.length; i++) {
 			errCell = error[i];
-			if (errCell != "000000") {
-				throw "MAJOR ERROR";
+			if (errCell != [0, 0, 0, 255]) {
+				throw "cell error";
 			}
 		}
 	}
-	var res =  chunks(co, ps);
+	var res = chunks(co, ps);
 	for (var i = 0; i < res.length; i++) {
-		res[i].unshift("CCCCCC");
-		res[i].push("CCCCCC");
+		res[i].unshift([0, 0, 0, 0]);
+		res[i].push([0, 0, 0, 0]);
 	}
 	res.unshift(new Array(ps+3).join('0').split('').map(function (i) {
-		return "000000";
+		return [0, 0, 0, 255];
 	}));
 	res.push(new Array(ps+3).join('0').split('').map(function (i) {
-		return "000000";
+		return [0, 0, 0, 255];
 	}));
 	for (var i = 0; i < res[0].length; i++) {
 		if (i % 2 != 0) {
-			res[0][i] = "CCCCCC";
+			res[0][i] = [0, 0, 0, 0];
 		}
 		else {
-			res[res.length-1][i] = "CCCCCC";
+			res[res.length-1][i] = [0, 0, 0, 0];
 		}
 	}
 	return res;
 }
 
 function toHex(r, g, b, a) {
+	if (r == 0 & g == 0 & b == 0 & a == 0) {
+		return "CCCCCC";
+	}
     hex = (256 + r).toString(16).substr(1) + ((1 << 24) + (g << 16) | (b << 8) | a).toString(16).substr(1);
 	return hex.substr(0, hex.length - 2).toUpperCase();
 }
