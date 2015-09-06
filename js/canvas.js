@@ -25,7 +25,7 @@ $(document).ready(function () {
 		for (var i = 0; i < data.length; i++) {
 			for (var j = 0; j < data[i].length; j++) {
 				context.beginPath();
-				context.fillStyle = "#" + data[i][j];
+				context.fillStyle = "rgba(" + data[i][j] + ")";
 				context.fillRect(j * ps, i * ps, ps, ps);
 			}
 		}
@@ -33,7 +33,32 @@ $(document).ready(function () {
 		$("a#dload")[0].href = data;
 	}
 	
-	$("input#textual-input").on('input', function () {
+	$("#banner").slideUp(0);
+	$("#home-main-cont").slideUp(0);
+	$("#demo-main-cont").slideUp(0);
+	
+	setTimeout(function() {
+        $("#banner").slideDown(750);
+        $("#home-main-cont").slideDown(750);
+    }, 250)
+    
+	toHome = function () {
+        $("#demo-main-cont").slideUp(750);
+        setTimeout(function() {
+            $("#banner").slideDown(750);
+            $("#home-main-cont").slideDown(750);
+        }, 750)
+    }
+    
+    toDemo = function () {
+        $("#home-main-cont").slideUp(750);
+        $("#banner").slideUp(750);
+        setTimeout(function() {
+            $("#demo-main-cont").slideDown(750);
+        }, 750)
+    }
+	
+	$("textarea#textual-input").on('input', function () {
 		newIdentity($(this).val());
 	});
 	
