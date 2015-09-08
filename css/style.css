@@ -1,0 +1,286 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #EEEEEE;
+	font-family: "FontAwesome";
+}
+a {
+	color: #9D1D1D;
+	text-decoration: none;
+}
+textarea {
+	resize: none;
+}
+div#top-cont {
+	width: 100%;
+	min-height: 100%;
+}
+div#nav-bar {
+	position: relative;
+	height: 50px;
+	background-color: #9D1D1D;
+	border: 1px solid transparent;
+	border-width: 0 0 1px;
+	border-color: #921B1B;
+}
+div#nav-cont {
+	display: block;
+	position: relative;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px 50px;
+}
+div#nav-logo, div#nav-logo > a, div#nav-logo > a > img {
+	height: 50px;
+	float: left;
+}
+div#nav {
+	height: 100%;
+	float: left;
+}
+div#pager {
+	height: 100%;
+}
+ul#page-nav {
+	height: 100%;
+	margin: 0px;
+	list-style: none;
+}
+ul#page-nav > li {
+	display: block;
+	position: relative;
+	height: 100%;
+	float: left;
+}
+ul#page-nav > li > a {
+	display: block;
+	position: relative;
+	padding: 17px 10px 15px;
+	color: #ffffff;
+}
+img#main-icode {
+	display: block;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div#banner {
+	position: relative;
+	height: 298px;
+	padding: 30px;
+	overflow: hidden;
+	background-color: #9D1D1D;
+	border-top: 1px solid #A73434;
+	border-bottom: 1px solid #921B1B;
+}
+div#banner-left {
+	height: 300px;
+	float: left;
+}
+i#banner-icon {
+	display: inline-block;
+	margin: 20px 30px 78px 60px;
+	float: left;
+	font-size: 150pt;
+}
+b#banner-title {
+	display: inline-block;
+	margin: 35px 100px 200px 0px;
+	float: left;
+	font-size: 40pt;
+}
+div#banner-right {
+	width: 400px;
+	height: 240px;
+	padding: 30px;
+	float: right;
+}
+div#banner-right > div {
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	height: 100px;
+	border-bottom: 1px solid #A73434;
+}
+div#banner-right-git {
+	padding: 9px 10px;
+	border-top: 1px solid #A73434;
+}
+div#button-cont {
+	display: inline-block;
+	margin: 0px 15px;
+	float: left;
+}
+ul#gh-btns {
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul#gh-btns > li {
+	margin: 4.333px 0px;
+}
+ul#gh-btns > li:first-of-type {
+	margin-top: 0px;
+}
+ul#gh-btns > li:last-of-type {
+	margin-bottom: 0px;
+}
+div#gh-logo-cont {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-right: 15px;
+	float: right;
+}
+img#gh-logo {
+	width: 100px;
+	height: 100px;
+}
+div#banner-right-updates {
+	padding: 9px 10px;
+	padding-bottom: 10px;
+}
+div#updates-version {
+	position: absolute;
+	top: 9px;
+	left: 10px;
+}
+div#updates-version > h4 {
+	display: inline-block;
+	margin: 0px;
+	color: #FFFFFF;
+	opacity: 0.3;
+}
+div#things-to-do-cont {
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+}
+ul#things-to-do {
+	margin: 12px;
+	padding: 0px;
+	list-style: none;
+}
+ul#things-to-do > li {
+	margin: 5px 0px;
+	color: #DDDDDD;
+}
+ul#things-to-do > li:first-of-type {
+	margin-bottom: 16px;
+	text-decoration: underline;
+}
+div#home-main-cont {
+	margin: 0px 160px;
+}
+section#over-intro {
+	font-family: proxima-nova, sans-serif;
+}
+div#over-intro-inner > p {
+	font-size: 18pt;
+	font-weight: 300;
+	line-height: 36pt;
+	text-align: center;
+}
+section#credit {
+	margin-top: 50px;
+}
+section#credit > h2 {
+	padding-bottom: 10px;
+	margin: 50px 0px 20px 0px;
+	border-bottom: 1px solid #CCCCCC;
+}
+div.credits-item {
+	width: 25%;
+	padding: 0px 10px;
+	float: left;
+}
+div#demo-main-cont {
+	margin: 0px 160px;
+}
+div#demo-content > div{
+	display: inline-block;
+	width: 100%;
+}
+div#demo-content > hr {
+	border-color: #CCCCCC;
+}
+div#encrypting {
+	margin-top: 50px;
+}
+div#encrypting > div {
+	display: inline-block;
+	width: 50%;
+	min-height: 400px;
+}
+div#textarea-outer {
+	float: left;
+}
+div#image-outer {
+	position: relative;
+	float: right;
+}
+div#textarea-outer > h2 {
+	margin: 0px 0px 50px 0px;
+	font-weight: 300;
+}
+textarea#textual-input {
+	width: 95%;
+	margin-right: 4.75%;
+	padding: 0px;
+}
+canvas#icode {
+	display: none;
+}
+img#icode {
+	float: right;
+}
+a#dload {
+	position: absolute;
+	width: 300px;
+	bottom: 0px;
+	right: 0px;
+	margin-bottom: 30px;
+	font-size: 30pt;
+}
+a#dload > i {
+	margin-left: 30px;
+}
+a#dload > b {
+	margin-right: 30px;
+	float: right;
+	font-size: 28pt;
+	font-weight: 300;
+}
+div#decrypting {
+	min-height: 400px;
+	margin-top: 50px;
+	padding: 0px 40px;
+}
+div#decrypting > h2 {
+	margin: 0px 0px 50px 0px;
+	font-weight: 300;
+	text-align: center;
+}
+div#input-div {
+	display: block;
+	width: 60%;
+	margin: 50px auto;
+	margin-top: 0px;
+}
+textarea#textual-base, div#load-toggle {
+	display: none;
+}
+div#load-toggle {
+	margin-left: 20px;
+}
+textarea#textual-id {
+	display: block;
+	width: 60%;
+	margin: 0px auto;
+	margin-bottom: 50px;
+}
