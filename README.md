@@ -1,2 +1,2 @@
-# icode v2.1.0
+# ICODE v2.1.0
 Text to Image
