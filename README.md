@@ -1,3 +1,2 @@
-# iimg v1.1.4
+# ICODE v2.1.0
 Text to Image
-* capacity of up to 29,601 alphanumeric characters
