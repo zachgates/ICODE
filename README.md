@@ -1,4 +1,2 @@
-# iimg v1.1.4
-Text to Image Encryption
-
-* capacity of up to 29,601 alphanumeric characters
+# ICODE v2.1.0
+Text to Image
