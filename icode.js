@@ -87,8 +87,18 @@ iicode = function (uon) {
 	var count = 1;
 	while (stack.length > 0) {
 		i = stack.pop();
-		if ((char == i) && (count < 6)) {
-			count += 1;
+		if (char == i) {
+			if ((!parseInt(i)) && (count < 9)) {
+				count += 1;
+			}
+			else if ((parseInt(i)) && (count < 6)) {
+				count += 1;
+			}
+			else {
+				empty.push(char.mult(count));
+				char = i;
+				count = 1;
+			}
 		}
 		else {
 			empty.push(char.mult(count));
